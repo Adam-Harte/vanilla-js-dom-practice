@@ -11,20 +11,27 @@
     <div id="wrapper">
         <header>
             <div id="page-banner">
-                <h1>Bookorama</h1>
+                <h1 class="title">Bookorama</h1>
                 <p>Books for ninjas</p>
+                <form id="search-books">
+                    <input type="text" placeholder="Search books ..."/>
+                </form>
             </div>
         </header>
         <div id="book-list">
-            <h2>Books to read</h2>
+            <h2 class="title">Books to read</h2>
             <ul>
                 <li>
-                    <span>Book name</span>
-                    <span>Delete</span>
+                    <span class="name">Book name</span>
+                    <span class="delete">Delete</span>
                 </li>
             </ul>
             <input type="checkbox"/>
         </div>
+        <form id="add-book">
+            <input type="text" placeholder="Add a book ..."/>
+            <button>Add</button>
+        </form>
     </div>
     <script type="text/javascript" src="index.js"></script>
 </body>
