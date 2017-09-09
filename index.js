@@ -20,3 +20,13 @@ addForm.addEventListener('submit', function(e){
     liElem.appendChild(deleteBtn);
     list.appendChild(liElem)
 });
+
+//hide books
+var hideBox = document.querySelector('#hide');
+hideBox.addEventListener('change', function(e){
+    if(hideBox.checked){
+        list.style.display = 'none';
+    } else {
+        list.style.display = 'initial';
+    }
+});
