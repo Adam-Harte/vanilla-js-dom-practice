@@ -3,8 +3,8 @@ var forms = document.forms;
 
 //delete books
 list.addEventListener('click', function(e){
-    if(e.target.className = 'delete'){
-        var li = e.target.parentElement();
+    if(e.target.className === 'delete'){
+        var li = e.target.parentElement;
         list.removeChild(li);
     }
 });
