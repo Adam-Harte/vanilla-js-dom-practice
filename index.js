@@ -1,6 +1,14 @@
 var list = document.querySelector('#book-list ul');
 var forms = document.forms;
 
+//delete books
+list.addEventListener('click', function(e){
+    if(e.target.className = 'delete'){
+        var li = e.target.parentElement();
+        list.removeChild(li);
+    }
+});
+
 var addForm = document.forms['add-book'];
 addForm.addEventListener('submit', function(e){
     e.preventDefault();
